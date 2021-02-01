@@ -12,7 +12,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "student_course")
-public class StudentCourse {
+public class StudentCourse implements SuperEntity{
 
     @EmbeddedId
     private StudentCoursePK studentCoursePK;

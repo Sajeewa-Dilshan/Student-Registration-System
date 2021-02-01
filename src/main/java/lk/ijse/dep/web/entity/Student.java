@@ -14,7 +14,7 @@ import java.sql.Date;
 @Data
 @Entity
 @Table(name = "student")
-public class Student  implements Serializable {
+public class Student implements SuperEntity {
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     @Id
     private int id;

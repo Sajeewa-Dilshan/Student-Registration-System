@@ -1,10 +1,9 @@
-package lk.ijse.dep.web.dto;
+package lk.ijse.dep.web.entity;
 
-import lk.ijse.dep.web.dto.util.Gender;
+import lk.ijse.dep.web.entity.util.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import net.bytebuddy.build.ToStringPlugin;
 
 import javax.persistence.*;
 import java.io.Serializable;

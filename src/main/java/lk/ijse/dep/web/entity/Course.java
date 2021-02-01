@@ -1,7 +1,7 @@
-package lk.ijse.dep.web.dto;
+package lk.ijse.dep.web.entity;
 
 
-import lk.ijse.dep.web.dto.util.Audience;
+import lk.ijse.dep.web.entity.util.Audience;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

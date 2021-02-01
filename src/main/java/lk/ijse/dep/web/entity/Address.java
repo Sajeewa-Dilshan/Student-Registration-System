@@ -1,4 +1,4 @@
-package lk.ijse.dep.web.dto;
+package lk.ijse.dep.web.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

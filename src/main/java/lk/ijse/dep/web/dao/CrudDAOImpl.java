@@ -8,16 +8,20 @@ import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
-public class CrudDAOImpl<T extends SuperEntity,PK extends Serializable> implements CrudDAO<T,PK> {
+public class CrudDAOImpl<T extends SuperEntity,PK extends Serializable> implements CrudDAO<T ,PK> {
 
     private EntityManager em;
     private Class<T> entityClassObj;
 
+    public  CrudDAOImpl(){
+        entityClassObj= (Class<T>) (((ParameterizedType)(this.getClass().getGenericSuperclass())).getActualTypeArguments()[0]);
+
+    }
+
     @Override
     public void setEntityManager(EntityManager em) {
 
-        entityClassObj= (Class<T>) (((ParameterizedType)(this.getClass().getGenericSuperclass())).getActualTypeArguments()[0]);
-
+   this.em=em;
     }
 
     @Override

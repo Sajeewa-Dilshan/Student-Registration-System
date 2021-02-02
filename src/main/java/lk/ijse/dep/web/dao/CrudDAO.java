@@ -13,7 +13,10 @@ public interface CrudDAO<T extends SuperEntity,PK extends Serializable> extends 
 
     void delete(PK key) throws Exception;
 
+    T get(PK key) throws  Exception;
+
     List<T> getAll() throws  Exception;
+
 
 
 
